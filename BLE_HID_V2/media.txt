@@ -1,0 +1,17 @@
+# ============================================================
+#  media.txt  -  Media control mode
+#  Place this file in the /modes/ folder on the SD card.
+# ============================================================
+
+NAME=Media
+
+# --- Buttons ---
+BTN1=MEDIA_PLAYPAUSE
+BTN2=MEDIA_NEXTTRACK
+BTN3_SHORT=MEDIA_PREVIOUSTRACK
+BTN3_LONG=NEXT_MODE
+
+# --- Rotary encoder ---
+ENC_CW=MEDIA_VOLUMEUP
+ENC_CCW=MEDIA_VOLUMEDOWN
+ENC_SW=MEDIA_MUTE

@@ -1,0 +1,26 @@
+# ============================================================
+#  system.txt  -  Windows system shortcuts mode
+#  Place this file in the /modes/ folder on the SD card.
+# ============================================================
+
+NAME=System
+
+# --- Buttons ---
+# Win + D  →  show desktop
+BTN1=MACRO:LEFTMETA+D
+
+# Win + Shift + S  →  screenshot snipping tool
+BTN2=MACRO:LEFTMETA+LEFTSHIFT+S
+
+# Win + E  →  file explorer
+BTN3_SHORT=MACRO:LEFTMETA+E
+
+BTN3_LONG=NEXT_MODE
+
+# --- Rotary encoder ---
+# F2 / F1  →  brightness up / down (works on most laptops)
+ENC_CW=MACRO:F2
+ENC_CCW=MACRO:F1
+
+# Win + L  →  lock session
+ENC_SW=MACRO:LEFTMETA+L

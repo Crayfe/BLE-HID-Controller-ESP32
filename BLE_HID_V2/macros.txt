@@ -1,0 +1,36 @@
+# ============================================================
+#  macros.txt  -  Custom macro examples mode
+#  Place this file in the /modes/ folder on the SD card.
+#
+#  This file demonstrates all supported action types.
+# ============================================================
+
+NAME=Macros
+
+# --- Simple media key ---
+BTN1=MEDIA_PLAYPAUSE
+
+# --- Key combo macro ---
+# Ctrl + Shift + Esc  →  open Task Manager directly
+BTN2=MACRO:LEFTCTRL+LEFTSHIFT+ESC
+
+# --- Multi-step macro with delay ---
+# Copy selected text, wait, then paste it
+# BTN2=MACRO:LEFTCTRL+C,DELAY:200,LEFTCTRL+V
+
+# --- Text macro ---
+# Types a literal string character by character (US QWERTY layout)
+BTN3_SHORT=TEXT:Hello from ESP32!
+
+# --- Sequence macro: open Run dialog, type a command, press Enter ---
+# BTN3_SHORT=MACRO:LEFTMETA+R,DELAY:500,TEXT:notepad,DELAY:200,ENTER
+
+# Cycle to next mode
+BTN3_LONG=NEXT_MODE
+
+# --- Encoder: undo / redo ---
+ENC_CW=MACRO:LEFTCTRL+Y
+ENC_CCW=MACRO:LEFTCTRL+Z
+
+# --- Encoder push: select all ---
+ENC_SW=MACRO:LEFTCTRL+A
